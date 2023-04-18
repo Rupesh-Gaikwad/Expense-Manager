@@ -1,0 +1,42 @@
+
+.card{
+    width: 70%;
+    margin: 5% auto;
+    padding: 5px 20px 20px 20px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+    color: white;
+}
+
+.item_container{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color: rgb(80, 80, 80);
+
+    display: flex;
+    justify-content: space-between
+}
+
+.item_container > p{
+    width: fit-content;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#item_title{
+    padding: 2px 3px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#item_price{
+    padding: 2px 3px;
+    background-color: brown;
+    font-weight: bold;
+    border-radius: 5px;
+}
