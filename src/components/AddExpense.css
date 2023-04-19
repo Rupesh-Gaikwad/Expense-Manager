@@ -1,0 +1,40 @@
+.add_expense_card{
+    background-color: rgb(43, 38, 33);
+    width: 90%;
+}
+
+form{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+
+.input_field{
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input_field > input{
+    background-color: rgb(43, 38, 33);
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: wheat;
+    outline: none;
+}
+
+.input_field > input:hover{
+    outline: none;
+}
+

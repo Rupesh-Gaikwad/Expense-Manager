@@ -16,7 +16,7 @@
     background-color: rgb(80, 80, 80);
 
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .item_container > p{
@@ -26,7 +26,7 @@
 
 }
 
-#item_title{
+#item_date{
     padding: 2px 3px;
     background-color: white;
     color: black;
