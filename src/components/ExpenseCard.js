@@ -2,23 +2,22 @@ import "./ExpenseCard.css"
 import ExpenseItem from "./ExpenseItem";
 import AddExpense from "./AddExpense";
 import {useState} from "react";
+
+const DUMMY_DATA = [{key: 1, date: new Date(), title:"Red shirt", price: 450 }];
 function ExpenseCard(){
 
-    const cur_date = new Date();
-    const [expenses, setExpenses] = useState([{date:cur_date, title:"Red shirt", price: 450 }]);
+    const [expenses, setExpenses] = useState(DUMMY_DATA);
 
     const setMyExpenses = (newexpense) =>{
-        setExpenses({
-            ...expenses,
-            newexpense
-        });
+        setExpenses([newexpense, ...expenses]);
     }
     return (
         <div className="card">
             <h2>Expense Manager</h2>
-            <AddExpense Expenses={setMyExpenses}/>
-            <ExpenseItem date={expenses[0].date} title={expenses[0].Description} price={expenses[0].price}/>
-            <ExpenseItem date={expenses[0].date} title={expenses[0].Description} price={expenses[0].price}/>
+            <AddExpense AddExpenses={setMyExpenses}/>
+            {console.log.expenses}
+            {expenses.map((expense) => <ExpenseItem key={expense.key} date={expense.date} title={expense.title} price={expense.price}/>)}
+
         </div>
     )
 }
